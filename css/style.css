@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    background-color: #1C232E !important;
+    color: white !important;
+    padding: 2em !important;
+}
+
+body {
+    background-color: #41B06E !important;
+}
+
+.conversos {
+    background-color: white !important;
+    padding: 5em !important;
+    border-radius: 2em !important;
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+    margin-top: 5% !important;
+    align-items: center !important;
+}
+
+h1 {
+    font-family: "Inter", sans-serif !important;
+    font-size: 54px !important;
+    font-weight: 700 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    color: white !important;
+}
+
+.navbar-brand, h6 {
+    font-size: 24px !important;
+    margin-top: 0px !important;
+    color: white !important;
+}
+
+.nav-item, a {
+    color: #FFF5E0 !important;
+    padding-right: 1em !important;
+}
+
+.parte1 {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.parte2 {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.campo_parte_1 {
+    width: 80% !important;
+    border-color: black !important;
+}
+
+.form-select {
+    background-color: #03C954 !important;
+    width: 90% !important;
+    color: black !important;
+    font-weight: bold !important;
+    font-size: 24px !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+}
+
+.botao_converter {
+    background-color: black !important;
+    width: 90% !important;
+    color: white !important;
+    font-weight: bold !important;
+    font-size: 24px !important;
+    text-transform: uppercase !important;
+}
+
+.dropdown-item{
+    color: black !important;
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
+}
+
+
+footer {
+    height: 4em !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    padding: 1em !important;
+    font-weight: bold !important;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .conversos {
+        display: block !important;
+        padding-top: 3em !important;
+        padding-right: 1em !important;
+        padding-left: 2em !important;
+        margin-top: 1em !important;
+    }
+
+    .quantia {
+        padding: 0 !important;
+        margin: 0 !important;
+        padding-top: 1em !important;
+    }
+
+    .parte1{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .campo_parte_1 {
+        width: 100% !important;
+    }
+
+    #resultado {
+        text-align: center !important;
+    }
+
+    .img_conversao {
+        margin-top: 2em !important;
+        margin-bottom: 3em !important;
+        padding-left: 6em !important;
+    }
+
+    .texto_footer {
+        font-size: 13px !important;
+        padding-top: 0.5em !important;
+    }
+}

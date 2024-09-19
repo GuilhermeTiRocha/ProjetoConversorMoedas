@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:void(0)">
+                    <h1>Fast</h1>
+                    <h6>Converter</h6>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto ">
+                        <li class="nav-item">
+
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <ul class="navbar-nav me-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)">ALERTA DE CÂMBIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://accounts.google.com/lifecycle/steps/signup/name?continue=https://mail.google.com/mail/u/0/&ddm=0&dsh=S1023503219:1726772341274288&emr=1&flowEntry=SignUp&flowName=GlifWebSignIn&followup=https://mail.google.com/mail/u/0/&ifkv=ARpgrqfRR2Kv8ibAPqVs9Q802wTinCsNh7EKGguycaMxXNSUx8aq3RoVmLR6FGPDGkaNXu92IawxIQ&osid=1&service=mail&TL=APps6eakeLBCXPrkwqEN3kmVSpaMQqh5AuYtLYDVHCTR-mW7TuG9E1-4ztOAsTxx" target="_blank">CRIAR CONTA</a>
+                            </li>
+
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="principal">
+        <div class="row conversos">
+            <div class="col-sm-5 quantia">
+                <div class="input-group mb-3 parte1">
+                    <p>Quantia (R$)</p>
+                    <input type="text" class="form-control campo_parte_1" id="qtd" value="0">
+                    <br>
+                    <h5 id="resultado">Resultado</h5>
+                </div>
+            </div>
+            <div class="col-sm-2 img_conversao">
+                <img src="img/pngwing.com.png" width="20em">
+            </div>
+            <div class="col-sm-5 converter_campo">
+                <div class="input-group mb-3 parte2">
+                    <div class="dropdown">
+                        <select class="form-select" id="selecao">
+                            <option class="moeda_inicial" value="#">Moeda</option>
+                            <option value="USD">Dólar</option>
+                            <option value="EUR">Euro</option>
+                            <option value="BTC">BTC</option>
+                        </select>
+                        <!-- 
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Dólar</a></li>
+                          <li><a class="dropdown-item" href="#">Euro</a></li>
+                        </ul>
+                        -->
+                    </div>
+                </div>
+                <button type="button" class="btn botao_converter" onclick="calcular()">Converter</button>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark fixed-bottom">
+        <div class="container">
+            <p class="text-white texto_footer">&copy; Site desenvolvido por Guilherme Rocha</p>
+        </div>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
